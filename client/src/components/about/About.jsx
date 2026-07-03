@@ -13,9 +13,9 @@ const About = () => {
     <section className="w-full py-16 md:py-24 bg-white dark:bg-dark-bg transition-colors duration-300 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* Left Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -26,7 +26,7 @@ const About = () => {
               <span className="text-primary">Who </span>
               <span className="text-secondary">We Are</span>
             </h2>
-            
+
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
               Based in Noida, Sunny Verma Fiber Glass has established itself as a trusted name in the industry with over 20 years of experience. We specialize in high-quality Fiberglass Reinforced Plastic (FRP) solutions.
             </p>
@@ -55,24 +55,27 @@ const About = () => {
           </motion.div>
 
           {/* Right Image Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95, x: 40 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="relative h-[400px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl group mt-8 lg:mt-0"
+            className="relative h-[300px] lg:h-[650px] w-full rounded-2xl overflow-hidden shadow-2xl group mt-8 lg:mt-0"
           >
-            <img 
-              src="/about.jpg" 
-              alt="Fiberglass Manufacturing Facility" 
-              className="absolute w-full h-full object-cover object-center transform group-hover:scale-105 transition duration-500"
+            <video
+              src="/about-video.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute w-full h-full object-fill object-center transform group-hover:scale-105 transition duration-500"
             />
-            
+
             {/* Overlay Gradient for depth mapping */}
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent bg-blend-overlay"></div>
-            
+
             {/* Floating Experience Badge */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -82,12 +85,12 @@ const About = () => {
               <div className="flex items-center gap-4">
                 <span className="text-primary text-4xl font-extrabold">20+</span>
                 <span className="text-gray-800 dark:text-white font-bold leading-tight">
-                  Years of <br/> Experience
+                  Years of <br /> Experience
                 </span>
               </div>
             </motion.div>
           </motion.div>
-          
+
         </div>
       </div>
     </section>
