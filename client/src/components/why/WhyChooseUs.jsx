@@ -119,7 +119,7 @@ const WhyChooseUs = () => {
                 Every project runs through rigorous quality control parameters ensuring complete durability and reliability seamlessly.
               </p>
 
-              <div className="w-full h-1 bg-gradient-to-r from-primary to-secondary to-accent rounded-full opacity-80"></div>
+              <div className="w-full h-1 bg-gradient-to-r from-primary to-primary to-primary rounded-full opacity-80"></div>
             </motion.div>
 
           </div>
