@@ -149,7 +149,7 @@ const Services = () => {
             <span className="text-secondary">Our </span>
             <span className="text-secondary">Services & Products</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 rounded-full opacity-80"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary mx-auto mt-6 rounded-full opacity-80"></div>
         </motion.div>
 
         {/* Dynamic Grid mapping */}

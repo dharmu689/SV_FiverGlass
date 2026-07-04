@@ -29,7 +29,7 @@ const Clients = () => {
           </span>
           <h2 className="text-2xl md:text-3xl font-extrabold uppercase">
             <span className="text-secondary">Our Clients</span>
-            <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 rounded-full opacity-80"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary mx-auto mt-6 rounded-full opacity-80"></div>
           </h2>
         </motion.div>
       </div>
